@@ -1,0 +1,27 @@
+Primero se debe descargar GIT de su página oficial, y en pocas palabras a todo se le debe dar next xd
+Se abre la GitBash
+Se debe configurar el alias y correo
+En este caso se tienen 3 diferentes tipos de alcance:
+    - Local: Solo aplica para los repositorios locales, en otra computadora el repositorio será nombrado diferente
+    - Global: Aplica la configuración para dentro de todos los repositorios dentro de un usuario
+    - System: Aplica para toda la computadora
+
+Si nosotros tenemos un nombre diferente para Local, Global o System; el que va a tomar en cuenta siempre será el más pequeño, es decir le dará prioridad al Local.
+
+- git config --global De esta manera se accede a las configuraciones a nivl global, sería el mismo caso para local o system; así mismo al hacerlo global es como hacerlo de la manera predeterminada.
+
+- git config --global user.name "Soy Jakeekaj" y de esta manera se configura un nombre
+- git config --global user.email "correo@gmail.com"   De esta manera se configura el email
+
+- git config --list   De esta manera se pueden ver las configuraciones que se pueden hacer
+- git config --global --list  De esta manera se accede a las configuraciones que se pueden hacer, pero a nivel global
+
+- git config --global core.editor "code --wait"   De esta manera configuramos con visual studio code, la palabra code es la palabra por defecto que git usa para visual studio code, --wait indica que no se suban los cambios hasta que cerremos el editor
+
+- git config --global core.autocrlf true    Esto va a evitar que hayan problemas más adelante, el auto idncia automático, cr indica el cariash return y lf indica line fit, el cr es específico de windows, y lo que indica en pocas palabras es que cuando se llegue al límite, se va a escribir en el inicio de la linea, mientras que el lf indica que se va a escribir abajo, es por esto que se configura el crlf.
+Esto es importante ya que es la manera en que se configura cómo se va a bajar de los servidores, y esto es porque por ejemplo en linux o Mac, funciona únicamente con los saltos de linea, pero si lo descargamos desde linux o Mac, y lo trabajamos en Windows, ahora sí nos dará problemas
+
+Si se estuviera en Linux, Mac o UNIX, debemos hacer lo mismo, pero con input, es decir:
+git config --global core.autocrlf input  Para indicar que siempre se suba con el salto de linea, pero no con el inicio de linea de windows, de esta manera en todos los servidores se sube con salto de linea, en Windows con el true se va a agregar el inicio de linea al descargarlo del servidor, y en los demás se bajará sin ningún tema.
+
+-- De esta manra acabamos con la configuración básica de git --

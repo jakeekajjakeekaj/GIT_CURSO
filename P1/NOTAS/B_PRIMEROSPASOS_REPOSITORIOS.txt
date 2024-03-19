@@ -1,0 +1,18 @@
+CREACIÓN DE REPOSITORIOS
+
+Para empezar debemos acceder a la locación en donde estos se quieren crear, de esta manera nosotros usamos cd para acceder a las carpetas (lo que uno ya suele saber, al manipular cd ubicacion, cd.., etc.)
+- cd ../  De esta manera nosotros accedemos a la ubicación original, digamos a la raíz
+- cd g:   De esta manera accedemos a un disco, se indica g para indicar que se acceda al disco g en caso de haber alguno
+- mkdir repo  De esta manera se crea una carpeta con el nombre repo
+- rmdir repo  De esta manera se elimina una carpeta con el nombre repo
+- git init    Inicializa GIT en carpeta oculta (ya sabes este paso)
+- ls  Enlista los archivos dentro de la carpeta
+- pwd Muestra la dirección en la que se encuentra
+- ls -a   Muestra a los archivos ocultos
+- git add .   Esto sube todo (ya lo sabes), de esta manera acabamos de agarar archivos que estaban en nuestra área de trabajo, y los subimos al área de preparación
+- git status  Muestra el status del área de preparación (ya lo sabes)
+- git rm --cached nombre.txt  De esta manera removemos un archivo que no nos haya gustado que esté en el área de preparación
+- git rm --cached nombre.txt nombre2.txt    De esta manera se eliminan varios archivos al mismo tiempo
+git commit -m "mensaje" De esta manera se commitea algo (ya lo sabes)
+- git commit    De esta manera se nos abre un archivo en donde podemos dejar de manera más detallada a nuestro commit, esto es en un .txt y funcion con lo que se hizo de core.editor "code wait"
+- git commit -a Se salta el área de preparación y directamente se sube del area de trabajo, es decir que ignora el add y el -m
