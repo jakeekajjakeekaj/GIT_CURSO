@@ -1,0 +1,17 @@
+RAMAS ó BRANCHES
+
+- git branch        De esta manera podemos ver la rama en la que nos ubicamos
+- git branch modificar-login      De esta manera podemos crear una rama, con kebash case (es decir escribir entre guiones)
+** SI DESPUÉS DE CREAR LA NUEVA RAMA, NOSOTROS ESCRIBIMOS git branch, YA NOS MOSTRARÁ LA RAMA QUE SE CREÓ RECIENTEMENTE **
+
+- git switch -c rama-temporal         De esta manera hemos creado otra rama y nos cambiamos hacia esa rama, es importante mencionar ue el -c es de create, así mismo creamos una rama dentro de otra rama, si nosotros quisiéramos crear una rama "padre" por así decirlo, tenemos que asegurarnos de encontrarnos en la rama master
+
+Es importante mencionar que si queremos eliminar una rama, no debemos estar dentro de la misma, esto porque puede generar problemas, dicho esto nosotros debemos:
+- git switch master         Para estar en la rama principal
+- git branch -d rama-temporal       De esta manera podemos eliminar la rama ya estando en la rama master
+
+- git branch -m rama-temporal rama-temporal-nueva           De esta manera cambiamos el nombre de una rama, DEBEMOS ESTAR EN UNA RAMA DISTINTA PARA QUE FUNCIONE
+
+- git branch -m rama-temporal-nueva         De esta manera se cambia el nombre de una rama (SERÍA DE LA RAMA EN LA QUE NOS ENCONTRAMOS)
+
+** REVISAR CARPETA DE EJERCICIOS **

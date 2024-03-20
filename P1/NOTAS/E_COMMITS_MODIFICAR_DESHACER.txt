@@ -1,0 +1,10 @@
+MODIFICAR Y DESHACER COMMITS
+
+git commit --amend      Esto puede cambiar el nombre del título del commit
+
+-- AHORA COMENZARÁN PRÁTICAS ALGO AGRESIVAS, CABE RECALCAR QUE SI SE QUIERE MODIFICAR UN COMMIT, LO MEJOR ES SOLO MODIFICAR AL ÚLTIMO, YA QUE EL HEAD FUNGE COMO UN APUNTADOR, Y POR EJEMPLO EN GIT COMO TAL NO MODIFICAS ALGO, SINO QUE LO REEMPLAZAS POR OTRO COMMIT, ESTO QUIERE DECIR QUE SI NOSOTROS MODIFICAMOS AL ÚLTIMO COMMIT, REALMENTE REEMPLAZAMOS ESE COMMIT POR OTRO COMMIT, EL PROBLEMA COMIENZA CUANDO NOSOTROS EN VEZ DE MODIFICAR EL ÚLTIMO COMMIT, QUEREMOS MODIFICAR OTROS ANTERIORES, AHÍ SE GENERA UN PROBLEMA PORQUE EL HEAD AL SER COMO UN APUNTADOR, SI PASAMOS EL HEAD PARA OTROS COMMITS ANTERIORES, TODO LO QUE ESTÁ POR DELANTE SE ELIMINARÁ, ES DEIR QUE LOS CAMBIOS MÁS ACTUALES E VAN A ELIMINAR, POR LO QUE NO ES MUY BUENA PRÁCTICA HACERLO DE ESTA MANERA --
+
+Si nosotros queremos justo hacer esto, y pasarnos al commit anterior eliminando al actual, lo que se tiene que hacer es:
+- git reset --soft 45a55      El número es el hash del repo, y de esta manera es pasar este repo al area de preparación, pero si hay otros repositorios enfrente, todos se eliminarán
+
+git reset --hard 45a55      Básicamente agarra, hace el cambio y le vale todo, si teniamos ciertos cambios, los borra, si teniamos algo en el area de preparación, también lo borra

@@ -1,0 +1,23 @@
+Restore, Checkout y más
+
+- Si nosotros queremos eliminar un archivo, lo que se tiene que hacer es:
+git rm archivo.txt
+git status
+git add archivo.txt     Esto agrega lo eliminado, es decir como si dijeramos "efectivamente, elimínalo"
+git commit -m "eliminando archivo" -a       De esta manera se commitea y con el -a se sube de una vez el cambio del area de trabajo en vez de pasar a la preparación
+**después de esto, sale un mensaje de que se elimino el archivo.txt indicando el delete mode**
+
+- Si nosotros queremos restaurar a la anterior versión de un commit, nosotros debemos escribir:
+git checkout archivo.txt
+** De esta manera nos muestra la anterior versión, es decir que toma al anterior commit, PERO ÚNICAMENTE DESDE EL ÁREA DE TRABAJO **
+
+- Si nosotros queremos restaurar a la anterior versión de un commit, pero ya desde el ÁREA DE PREPARACIÓN, lo que se debe hacer es:
+git reset --hard
+** De esta manera se obtiene la última versión de un commit desde el área de trabajo, NO ES UNA BUENA PRÁCTICA HACERLO DE ESTA MANERA **
+
+- Si nosotros queremos cambiar el nombre de un archivo, lo cambiamos como:
+git mv archivo.txt archivo_nuevo_nombre.txt
+
+- Si se quiere ver al git status en una presentación más limpia, podemos escribir
+- git status -s
+** De esta manera nos muestra los archivos mayormente **

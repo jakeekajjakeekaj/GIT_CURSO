@@ -1,0 +1,11 @@
+GIT DIFF
+
+- git diff 4427b 9ccc3        De esta manera checamos la comparación entre 2 repositorios
+- git diff --name-only 4427b 9ccc3        De esta manera nos muestra el nombre de los archivos que se están comparando
+- git diff --word-diff 4427b 9ccc3        De esta manera nos muestra la diferencia entre lo que estaba antes y lo que no estaba antes
+- git log --oneline         De esta manera se obtiene el hash de los commits de forma resumida
+- git log       También se obtiene el hash de los commits
+
+** EL HASH SON LO NÚMEROS, ORIGINALMENTE ES UNA CANTIDAD ENORME DE NÚMROS, PERO GIT TE ACORTA LA CANTIDAD DE DÍGITOS, EL PROBLEMA ES QUE ENTRE MÁS DIGITOS HAYA O MENOS, 2 HASHES PUEDEN COINCIDIR, POR LO QUE SI NOSOTROS QUEREMOS MODIFICAR EL CAMAÑO DEL HASH, EL COMANDO ES: **
+- git config --global core.abrev 5
+** PARA ESTE CASO LO ACORTAMOS A 5, DEPENDIENDO DE LA LONGITUD DEL PROYECTO, NOSOTROS PODEMOS AGRANDAR ESTA CIFRA, PERO OBVIAMENTE ENTRE MÁS NÚMEROS, ES MÁS COMPLICADO DE ESCRIBIR Y ESAS COSAS **

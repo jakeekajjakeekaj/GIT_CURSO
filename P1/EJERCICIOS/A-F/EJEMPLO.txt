@@ -1,0 +1,30 @@
+Supongamos que tenemos una función, esta función ya tiene un git init, a su vez ya se le hizo un add y nos encontramos en la rama master, pero nosotros queremos modificarla.
+
+- git switch -c optimize-sum-function       De esta manera nosotros creamos una nueva rama
+- git branch        Para verificar que nos encontramos en esta rama
+
+Una vez que se hace el cambio para optimizar a nuestra función, primero le damos un add, y después la commiteamos.
+
+AHORITA NOSOTROS TENEMOS LOS CAMBIOS GUARDADOS EN UN RAMA APARTE, PERO LO QUE SE QUIERE HACER ES AHORA METER LOS CAMBIOS REALIZADOS EN NUESTRA RAMA, A LA RAMA PRINCIPAL PARA QUE SEA LA VERSIÓN FINAL.
+
+- git log --oneline         De esta manera podemos ver la información de los commits, como las ramas y el hash
+
+UNA VEZ SE TENGA ESTO, ES IMPORTANTE MENCIONAR QUE DEBEMOS ESTAR DENTRO DE LA RAMA QUE SE QUIERE FUNCIONAR, ES DECIR QUE DEBEMOS MOVERNOS PRIMERO A NUESTRA RAMA PRINCIPAL:
+
+- git switch master
+
+Y AHORA PARA FUSIONAR NUESTRAS RAMAS SE TIENE QUE HACER:
+
+- git merge optimize-sum-function           De esta manera con merge fusionamos las ramas
+
+- git log --oneline         Ahora si nosotros escribimos esto, ya nos aparece la información de nuestras ramas actualizadas
+
+SI NOSOTROS QUEREMOS REVERTIR UNA FUSIÓN DE LAS RAMAS, LO QUE DEBEMOS HACER ES:
+
+- git reset --hard #78817       #El número sería el hash de nuestro último commit antes de fusionar
+
+SI SE QUIERE ELIMINAR LA RAMA HIJA SERÍA:
+
+- git branch -d optimize-sum-function           De esta manera ya estariamos eliminando a la rama creada pero manteniendo los cambios en la rama master
+
+

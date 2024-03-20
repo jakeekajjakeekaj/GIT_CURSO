@@ -1,0 +1,18 @@
+MERGE CONFLICTS
+
+Estos son los conflictos al momento de fusionar nuestras ramas. Como tal no es un error, sino que git nos está diciendo que no sabe de qué manera proceder y que nosotros le indiquemos el proceso.
+
+Un conflicto se presenta cuando:
+En la rama main tenemos 3 commits, después creamos otra rama "rama-2" con 2 commits, si nosotros aplicamos un merge, no hay ningún problema, tenemos todo el historial de la main, después se pasó a la rama-2 y después con merge unimos todo a la rama main de nuevo.
+El conflicto surge cuando en la rama main después de crear la rama-2, se crea otro commit en la rama main, esto diría que la rama-2 ya no tiene todo el historial de la rama main, porque le faltaría el nuevo commit creado en la rama main. Es por esto que al hacer un merge sobre la rama surgirían los problemas, porque git diría ¿Qué hago?, nos quedamos con el commit de la rama-2, nos quedamos con el commit de la rama main?; pues nosotros tenemos que decirle con cuál se quedará al momento de fusionar.
+
+- git log --oneline --all       De esta manera nos muestra todos los commits de todas las ramas con ru respectivo hash y todo
+
+- git merge rama-2
+Si nosotros queremos hacer esto, nos va a decir que existe un conflicto por lo ya antes mencionado, por lo que para resolverlo nos da 4 opciones:
+- Accept Current Change: Hacer un merge, pero aceptando únicamente lo de la rama main
+- Accept Incoming Change: Hacer un merge, pero aceptando únicamente a la rama-2
+- Accept Both Changes: Acepta ambos cambios, es decir junta las lineas de ambos
+- Compare Changes: Te muestra de manera más desglozada todo para que puedas elegir mejor
+
+Si nosotros seleccionamos una opción que dice "Resolve in Merge Editor", nos da una vista diferente para la solución, y de esta manera podemos ir jugando más con estas opciones sin tener que aceptar todavía al cambio, para asentar el cambio se debe seleccionar complete merge y de esta manera se termina de guargar el cambio realizado. Posterior se commitea o merge --continue y listo.
