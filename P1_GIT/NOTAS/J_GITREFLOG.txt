@@ -1,0 +1,12 @@
+REFLOG básicamente es una herramienta que nos ayuda a mantener un tracking de todos los movimientos que ha realizado nuestra HEAD, es decir a todos los lugares en los que ha apuntado, el HEAD mantiene un historial de todo esto.
+
+Si nosotros aplicamos:
+- git reset --hard HEAD~1
+Indicamos que se elimine el último commit y pasemos al commit anterior, sin embargo si nosotros queremos recuperarlo, basta con escribir de nuevo:
+- git reset --hard 19379
+Osea que basta con escribir el hash del commit para poder recuperarlo, ya que nosotros al hacer esto, no se elimina el commit, eliminamos la referencia pero no el archivo.
+
+Sin embargo para que esto funcione, nosotros tenemos que seguir teniendo a nuestro hash, sin embargo si nosotros perdemos el hash, pues ya no podríamos recuperar dicho commit, es aquí cuando entra reflog.
+Si nosotros escribimos:
+- git reflog
+Nos arroja todos los commits que se realizaron junto con sus respectivos movimientos, osea todos los lugares a donde HEAD llegó a apuntar, es así que podemos recuperar cualquier commit

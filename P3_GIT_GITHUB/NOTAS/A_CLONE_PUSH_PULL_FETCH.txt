@@ -1,0 +1,32 @@
+* GIT CLONE
+Primero debemos acceder al repositorio que se desea clonar, después de esto copiamos el link del repositorio, existen 3, pero el más sencillo sería el http
+
+Una vez esto escribimos 
+- git clone http...
+
+De esta manera al escribir git clone y la dirección, ya pudimos copiar el repositorio deseado
+
+* GIT PUSH
+Esto igual ya lo sabemos, es cuando subimos los cambios al servidor.
+Cuando nosotros usamos el push -u origin main, estamos indicando que cada que se realice un push, la dirección será la escrita después del -u. Por ejemplo si nosotros escribimos eso, después basta con que solo escribamos:
+- git push
+
+* GIT PULL
+Si alguien más crea un nuevo repositorio a nivel servidor, nosotros necesitamos tener ese cambio para poder hacer que todo fucnione correctamente, si nosotros colocamos:
+- git status
+Nos drá que la rama está up to date, pero no lo está, más adelante se enseñará a sicronizar esta herramienta, sin embargo ahora lo que se necesita hacer, ya sabiendo que no está actualizado, simplmeente escribimos
+- git pull
+De esta manera ya incluimos los cambios dentro de nuestra area de preparación.
+
+* GIT FETCH
+Para empezar es importante analizar cómo funciona GIT PULL, git pull lo que hace es realizar un GIT FETCH y después un GIT MERGE, esto quiere decir que primero obtiene los cambios, pero no lo cambia en nuestras ramas locales, entonces esto tiene la ventaja de que nos saltamos pasos y es más rápido, pero en consecuencia tenemos menos control sobre lo que pasa, mientras que con git fetch esto ya no ocurre así, porque solo estamos obteniendo los cambios para posterior trabajar con los mismos.
+Por ejemplo, si en el lado del servidor se borra un archivo, pero nosotros modificamos cierta información de ese archivo, al momento de nosostros realizar un pull nos dará problemas, ya que ese archivo ya fue eliminado y no se puede modificar, pues es aquí donde se usaría el git fetch, para esto se hace:
+- git fetch
+Aquí se consiguen los cambios, pero no se modifican nuestros archivos locales, después nos metemos a nuestra rama principal, es decir:
+- git switch origin/master ó main
+después nos indica que usemos detach, es decir:
+- git switch --detach origin/master
+después podemos crear un:
+- git pull
+y los conflictos los resolvemos con el merge editor
+Y de esta manera realizamos todo.

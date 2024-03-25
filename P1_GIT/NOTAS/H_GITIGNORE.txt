@@ -1,0 +1,22 @@
+GIT IGNORE
+
+Es un archivo llamado .gitignore y le dice a git qué archivos serán ignorados (ya lo conoces)
+
+Dentro del gitignore, se debe colocar el nombre del archivo que se desa ignorar, a su vez si nosotros queremos ignorar todos los archivos de cierta extensión, por ejemplo todos los archivos txt, deberíamos escribir:
+- *.txt
+
+Si por ejemplo queremos que se ignoren a todos los .txt pero hay un .txt que no queremos que ignore, podemos colocar
+- *.txt
+- !readme.txt
+De esta manera indicamos que se ignoren todos los .txt exceptuando el readme.txt
+
+Para ignorar todos los archivos de un directorio por ejemplo, se coloca la dirección como:
+- fotos/
+
+Si queremos ignorar a todos los archivos que acaben con cierta terminación, sería de la manera:
+- *).txt
+Así indicamos que solo los que acaben con un paréntesis serán finalizados
+
+Si queremos tener un gitignore global sería creando un gitignore en otra zona y después colocar la ruta, esto sería de la manera:
+- git config --global core.excludesfile G:/.gitignore_global
+De esta manera ya colocamos a nuestro gitignore global

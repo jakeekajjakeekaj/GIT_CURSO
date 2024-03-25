@@ -1,0 +1,9 @@
+CREAR Y CONFIGURAR REPOSITORIO
+
+Lo ideal sería escribirlo como dash-case
+
+En el readme.md, si escribimos:
+- # ES COMO PONER UN TITULO
+
+Mientras que si escribimos:
+- ## Es como poner un subtítulo

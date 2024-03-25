@@ -1,0 +1,10 @@
+Si nosotros quisiéramos ejecutar un comando varias veces, pero este comando es muy largo, la manera de escribirlo sería:
+- git log --oneline --all --graph --pretty=format:"%C(auto)%h%d %s %C(black)%C(bold)%cr"
+El de arriba es un comando largo para que te muestre los commits, y con un color más oscuro mostrar el tiempo transurrido de cada commit, pero cada que se quiera ejecutar se tiene que escribir todo esto, o en su defecto pasarse haciendo copy paste, pero existe otra manera de facilitarlo, y esto sería:
+- git config --global alias.log-mejorado "git log --oneline --all --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr'"
+De esta manera ahora solo basta con que se escriba:
+- git log-mejorado
+
+OTRO EJEMPLO:
+- git config --global alias.log-simple "log --oneline --graph --all"
+De esta manera se obtendrá el típico git --oneline --all pero con un gráfico de cómo se comportan las ramas
