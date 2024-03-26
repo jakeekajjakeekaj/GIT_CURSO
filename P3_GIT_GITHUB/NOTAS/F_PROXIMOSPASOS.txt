@@ -1,0 +1,11 @@
+PROXIMOS PASOS
+
+- GIT STASH: Permiten guardar cambios que no están comprometidos
+- GIT CHERRY-PICK: En vez de fusionar todos los commits de todas las ramas, gracias a esto podemos agarrar un commit puntual y llevarlo a otra rama, sin necesidad de fusionar todo.
+- MILESTONES: Organizan y rastrean todos los pull requests e issues
+- REABSE/SQUASH: Es un tipo de fusión de juntar lo de una rama a otra, pero con rebase agarramos toda la secuencia de commits y los agregamos a otra rama.
+Con Squash se combinan una serie de commits en un solo commit, y así lo fusionamos en la rama principal, es decir que combina todo para que al final solo salga un commit.
+- SUBMÓDULOS: Agarrar un repositorio y meterlo a otro repositorio, de esta manera un proyecto grande lo puedes dividir en pedazos más pequeños
+- GIT HOOKS: Ejecuta scripts en momentos determinados, ya sea antes de un push o después de un push por ejemplo, de esta manera se pueden manejar validaciones por ejemplo.
+- GIT BISECT- Encuentra cuál fue el commit que tuvo el problema, de esta manera marca un rango en donde el commit funciona y donde no fucniona, de esta manera se va diseccionando commit por commit dentro de este mismo rango para determinar el que si es funcional y el que no lo es.
+- Una vez que ya se domine más GIT, se pueden manejar metodologías como GIT FLOW ó GITHUB FLOW.

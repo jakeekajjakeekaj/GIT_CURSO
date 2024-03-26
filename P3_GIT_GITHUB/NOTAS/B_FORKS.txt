@@ -1,0 +1,5 @@
+FORKS   (BIFURCACIÓN)
+
+Un Fork es parecido a clonar un repositorio, solo que en vez de usar git clone, se usa el fork, la diferencia es que en git clone se clona el repositorio y se realizan todas las configuraciones en nuestro repositorio local, mientras que con el fork lo que hacemos es desde github lo subimos a nuestra cuenta de github, osea que no hay necesidad de tener el repositorio de forma local.
+
+Así mismo para hacer el fork, es que dentro de un repositorio dentro del propio github, seleccionamos la opción de fork para que así se realice dicha bifurcación. Una vez realizado ya podemos seleccionar commit changes, y de esta manera se ha conseguido realizar un fork.

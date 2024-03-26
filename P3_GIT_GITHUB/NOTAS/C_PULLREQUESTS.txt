@@ -1,0 +1,6 @@
+PULL REQUESTS
+
+Básicamente consiste en preguntarle a alguien si se puede subir el respositorio clonado y modificado en el repositorio original, es decir si clonamos un repositorio de alguien más, le realizamos las correspondientes modificaciones y lo volvemos a subir a la nube, nosotros podemos decir "oye, creo que mi repositrio quedó mejor, lo puedes incluir en el original?".
+
+Para poder realizarlo es:
+- Una vez ya subido a través de github, le podemos colocar en contribuir, una vez que le piquemos ahí, nos indica si puede haber una fusión y si no hay problemas, después de esto ya podemos indicar el título y descripción para así finalizar diciendo create pull request.

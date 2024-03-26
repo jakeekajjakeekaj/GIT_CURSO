@@ -1,0 +1,9 @@
+ISSUES
+
+Cualquier cambio/mejora que se tiene que hacer, se pueden resolver asignando issues, de esta manera dentro del repositorio podemos acceder a la sección de issues, dentro del mismo podemos ver las etiquetas por defecto, así mismo podemos ver los Milestones, que son agrupaciones de los issues en donde se pueden visualizar todos los issues ya resueltos.
+Nos podemos crear issues personalizados, en donde añadimos el título y la descripción. (RECORDANDO LA SOMBILOGÍA DE # TITULO ## Subtitulo)
+Una vgez esto se idncia submit a new issue.
+
+También podemos colocar dentro de la descripción el formato del código, escribiendo el código y seleccionándolo con la herramienta que ahí mismo nos ofrecen, así mismo podemos asignarle a algún usuario dicho issue.
+
+Después podemos cerrar los issues para indicar que se ha resuelto, así como escribir una descripción de cómo se llevó a cabo su solución.
